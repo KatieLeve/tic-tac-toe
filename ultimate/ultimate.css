@@ -1,10 +1,46 @@
+body {
+    background-color: aqua;
+}
 
+h1 {
+    color: rgb(255, 47, 161)
+}
 
 .ultimateCellContainer {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    /* grid-gap: 25px, 40px; */
+    grid-template-columns: repeat(3, max-content);
     width: 250px;
     margin: auto;
-    
-   
+    justify-content: center;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: azure;
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 95px;
+    margin: auto;
+    padding: 10px;
+}
+
+#restartBtn {
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: blueviolet;
 }
