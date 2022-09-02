@@ -12,7 +12,17 @@ const winConditions = [
   [0, 4, 8],
   [6, 4, 2],
 ];
-let options = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+
+// options.push possibly put in loop, initialize empty array
+let options = ['', '', '', '', '', '', '', '', ''];
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
+options.push('', '', '', '', '', '', '', '', '');
 let currentPlayer = 'X';
 let running = false;
 
