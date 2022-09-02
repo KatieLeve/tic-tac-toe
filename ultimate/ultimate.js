@@ -12,7 +12,7 @@ const winConditions = [
   [0, 4, 8],
   [6, 4, 2],
 ];
-let options = ['', '', '', '', '', '', '', '', ''];
+let options = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let running = false;
 
@@ -62,7 +62,6 @@ function checkWinner() {
   }
   if (roundWon) {
     statusText.textContent = `${currentPlayer} wins!`;
-    running = false;
   }
   else if(!options.includes("")){
     statusText.textContent = `Draw!`;
@@ -74,7 +73,7 @@ function checkWinner() {
 }
 function restartGame() {
     // currentPlayer = "X";
-    options = ['', '', '', '', '', '', '', '', ''];
+    options = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
     statusText.textContent = `${currentPlayer}'s Turn`;
     cells.forEach(cell => cell.textContent = "");
     running = true;
