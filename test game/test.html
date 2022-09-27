@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <h1>Tic Tac Toe Test</h1>
+    <div id="gameContainer">
+        <div cellIndex="0" class="bigTile right-border bottom-border">
+            <div id="topLeft">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div id=cellIndex="1" class="bigTile right-border bottom-border">
+            <div id="topMiddle">
+                <div data-index="9" class="cell right-border bottom-border"></div>
+                <div data-index="10" class="cell right-border bottom-border"></div>
+                <div data-index="11" class="cell bottom-border"></div>
+                <div data-index="12" class="cell right-border bottom-border"></div>
+                <div data-index="13" class="cell right-border bottom-border"></div>
+                <div data-index="14" class="cell bottom-border"></div>
+                <div data-index="15" class="cell right-border"></div>
+                <div data-index="16" class="cell right-border"></div>
+                <div data-index="17" class="cell"></div>
+                <div id="strike1" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="2" class="bigTile bottom-border">
+            <div id="topRight">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="3" class="bigTile right-border bottom-border">
+            <div id="middleLeft">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="4" class="bigTile right-border bottom-border">
+            <div id="middleMiddle">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="5" class="bigTile bottom-border">
+            <div id="middleRight">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="6" class="bigTile right-border">
+            <div id="bottomLeft">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="7" class="bigTile right-border">
+            <div id="bottomMiddle">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+        <div cellIndex="8" class="bigTile">
+            <div id="bottomRight">
+                <div data-index="0" class="cell right-border bottom-border"></div>
+                <div data-index="1" class="cell right-border bottom-border"></div>
+                <div data-index="2" class="cell bottom-border"></div>
+                <div data-index="3" class="cell right-border bottom-border"></div>
+                <div data-index="4" class="cell right-border bottom-border"></div>
+                <div data-index="5" class="cell bottom-border"></div>
+                <div data-index="6" class="cell right-border"></div>
+                <div data-index="7" class="cell right-border"></div>
+                <div data-index="8" class="cell"></div>
+                <div id="strike" class = "strike"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <h2 id="matchText"></h2>
+    <h2 id="statusText"></h2>
+    <button id="restartBtn">Restart</button>
+    <a href="../index.html">
+        <button id="regular">back to regular</button>
+    </a>
+
+    </div>
+    <!-- <script src="../index.js"></script> -->
+    <script src="test.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: aqua;
+}
+
+h1 {
+    color: rgb(255, 47, 161);
+    text-align: center;
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 475px;
+    height: 475px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.bigTile {
+
+    /* may not need this */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* cursor: pointer 
+match won - change background-color*/
+.right-border {
+    border-right: 0.2em solid indigo;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid indigo;
+}
+
+.matchWinColor-x {
+    background-color: rgb(240, 124, 124);
+}
+
+.matchWinColor-o {
+    background-color: rgb(124, 184, 240);
+}
+
+#topLeft, #topMiddle, #topRight, #middleLeft, #middleMiddle, #middleRight, #bottomLeft, #bottomMiddle, #bottomRight {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    position: relative;
+}
+
+.cell {
+ width: 2px;
+     height: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.strike {
+    position: absolute;
+    background-color: rgb(40, 224, 15);
+}
+
+.strike-row-1 {
+    width:100%;
+    height:2px;
+    top: 15%;
+}
+
+.strike-row-2 {
+    width:100%;
+    height:2px;
+    top: 49%;
+}
+
+.strike-row-3 {
+    width:100%;
+    height:2px;
+    top: 83%;
+}
+
+.strike-column-1 {
+    height:100%;
+    width:2px;
+    left: 15%;
+}
+
+.strike-column-2 {
+    height:100%;
+    width:2px;
+    left: 49%;
+}
+
+.strike-column-3 {
+    height:100%;
+    width:2px;
+    left: 83%;
+}
+
+.strike-diagonal-1 {
+width: 90%;
+height: 2px;
+top: 45%;
+left: 1%;
+transform: skewY(51deg);
+}
+
+.strike-diagonal-2 {
+    width: 90%;
+    height: 2px;
+    top: 54%;
+    left: 1%;
+    transform: skewY(-51deg);
+    }
+
+    .x-hover:hover::after{
+        content:"X";
+        opacity: 0.4;
+    }
+    .o-hover:hover::after{
+        content:"O";
+        opacity: 0.4;
+    }
+    #restartBtn {
+        font-size: 15px;
+        border-radius: 5px;
+        border-color: blueviolet;
+    }
